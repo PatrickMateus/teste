@@ -6,18 +6,18 @@ adicionarAtendimento.addEventListener("click",function(event){
     var nome = form.nome.value;
     var freshdesk = form.freshdesk.value;
     var id = form.id.value;
-    var gor = form.gordura.value;
+    var app = form.app.value;
     var difi = form.dificuldade.value;
     var data = form.data.value;
     var diag = form.diagnostico.value;
     var resposta = form.resposta.value;
 
-    var pacienteTr = document.createElement("tr");
+    var alunoTr = document.createElement("tr");
 
     var nomeTd = document.createElement("td");
     var freshdeskTd = document.createElement("td");
     var idTd = document.createElement("td");
-    var gorTd = document.createElement("td");
+    var appTd = document.createElement("td");
     var difiTd = document.createElement("td");
     var dataTd = document.createElement("td");
     var diagTd = document.createElement("td");
@@ -26,26 +26,23 @@ adicionarAtendimento.addEventListener("click",function(event){
     nomeTd.textContent = nome;
     idTd.textContent = id;
     freshdeskTd.textContent = freshdesk;
-    gorTd.textContent = gor;
+    appTd.textContent = app;
     respostaTd.textContent = resposta;
     difiTd.textContent = difi;
     dataTd.textContent = data;
     diagTd.textContent = diag;
 
-    pacienteTr.appendChild(nomeTd);
-    pacienteTr.appendChild(idTd);
-    pacienteTr.appendChild(freshdeskTd);
-    pacienteTr.appendChild(gorTd);
-    pacienteTr.appendChild(difiTd);
-    pacienteTr.appendChild(dataTd);
-    pacienteTr.appendChild(diagTd);
-    pacienteTr.appendChild(respostaTd);
+    alunoTr.appendChild(nomeTd);
+    alunoTr.appendChild(idTd);
+    alunoTr.appendChild(freshdeskTd);
+    alunoTr.appendChild(appTd);
+    alunoTr.appendChild(difiTd);
+    alunoTr.appendChild(dataTd);
+    alunoTr.appendChild(diagTd);
+    alunoTr.appendChild(respostaTd);
 
     var tabela = document.querySelector("#tabela-atendimentos");
-    tabela.appendChild(pacienteTr);
-
-
-    console.log(altura);
+    tabela.appendChild(alunoTr);
 
     form.reset();
 });
