@@ -4,8 +4,8 @@ adicionarAtendimento.addEventListener("click",function(event){
     event.preventDefault();
     var form  = document.querySelector("#formAdiciona");
     var nome = form.nome.value;
-    var altura = form.altura.value;
-    var peso = form.peso.value;
+    var freshdesk = form.freshdesk.value;
+    var id = form.id.value;
     var gor = form.gordura.value;
     var difi = form.dificuldade.value;
     var data = form.data.value;
@@ -15,8 +15,8 @@ adicionarAtendimento.addEventListener("click",function(event){
     var pacienteTr = document.createElement("tr");
 
     var nomeTd = document.createElement("td");
-    var alturaTd = document.createElement("td");
-    var pesoTd = document.createElement("td");
+    var freshdeskTd = document.createElement("td");
+    var idTd = document.createElement("td");
     var gorTd = document.createElement("td");
     var difiTd = document.createElement("td");
     var dataTd = document.createElement("td");
@@ -24,8 +24,8 @@ adicionarAtendimento.addEventListener("click",function(event){
     var respostaTd = document.createElement("td");
 
     nomeTd.textContent = nome;
-    pesoTd.textContent = peso;
-    alturaTd.textContent = altura;
+    idTd.textContent = id;
+    freshdeskTd.textContent = freshdesk;
     gorTd.textContent = gor;
     respostaTd.textContent = resposta;
     difiTd.textContent = difi;
@@ -33,8 +33,8 @@ adicionarAtendimento.addEventListener("click",function(event){
     diagTd.textContent = diag;
 
     pacienteTr.appendChild(nomeTd);
-    pacienteTr.appendChild(pesoTd);
-    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(idTd);
+    pacienteTr.appendChild(freshdeskTd);
     pacienteTr.appendChild(gorTd);
     pacienteTr.appendChild(difiTd);
     pacienteTr.appendChild(dataTd);
