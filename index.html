@@ -56,6 +56,8 @@
 		<main>
 			<section class="container">
 				<h2>Visão Geral</h2>
+				<label for="filtrar-tabela">Filtrar por id:</label>
+    			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
 				<table>
 					<thead>
 						<tr class = "seila">
@@ -72,7 +74,7 @@
 					<tbody id="tabela-atendimentos">
 							<tr class="aluno" id="primeiro-paciente">
 									<td class="info-nome">Paulo</td>
-									<td class="info-peso">100</td>
+									<td class="info-id">100</td>
 									<td class="info-altura">2.00</td>
 									<td class="info-gordura">10</td>
 									<td class="info-imc">0</td>
@@ -82,6 +84,7 @@
 		</main>
 		<script src="js/criaTabela.js"></script>
 		<script src="js/removerAtendimento.js"></script>
+		<script src="js/filtra.js"></script>
 
 	</body>
 </html>

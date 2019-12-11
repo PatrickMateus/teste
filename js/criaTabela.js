@@ -1,3 +1,8 @@
+now = new Date;
+var dataCorreta = now.getMonth() + 1;
+console.log(now.getDate() + " / " + dataCorreta + " / " + now.getFullYear() );
+
+
 var adicionarAtendimento = document.querySelector("#adicionar-atendimento");
 
 adicionarAtendimento.addEventListener("click",function(event){
@@ -23,7 +28,7 @@ function obtemAtendimentoDoFormulario(form){
         id: form.id.value,
         app: form.app.value,
         difi: form.difi.value,
-        data: form.data.value,
+        data: now.getDate() + " / " + dataCorreta + " / " + now.getFullYear () ,
         diag: form.diag.value,
         resposta: form.resposta.value,
     }
