@@ -157,3 +157,10 @@ button[disabled=disabled], button:disabled {
 .seila{
 	background: LimeGreen;
 }
+.aluno{
+	color:red;
+}
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}

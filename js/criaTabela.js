@@ -35,7 +35,7 @@ function montaTr(aluno){
     alunoTr.classList.add("aluno");
 
     alunoTr.appendChild(montaTd(aluno.nome, "info-nome"));
-    alunoTr.appendChild(montaTd(aluno.freshdesk, "info-freshdesl"));
+    alunoTr.appendChild(montaTd(aluno.freshdesk, "info-freshdesk"));
     alunoTr.appendChild(montaTd(aluno.id, "info-id"));
     alunoTr.appendChild(montaTd(aluno.app, "info-app"));
     alunoTr.appendChild(montaTd(aluno.resposta, "info-resposta"));
