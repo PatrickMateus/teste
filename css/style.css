@@ -174,3 +174,11 @@ button[disabled=disabled], button:disabled {
 .invi{
 	display: none;
 }
+
+#diag{
+	margin-left: 18px;
+}
+
+#resposta{
+	margin-left: 18px;
+}
